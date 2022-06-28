@@ -1,0 +1,80 @@
+<div class="container" style="margin-top: 20px">
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Top 10 Songs</span>
+      <div class="d-flex">
+        <a href="" class="btn btn-primary">Add New Song</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row card" style="padding: 10px">
+    <div class="col-sm-12 col-md-4 col-lg-3">
+      <div class="card">
+        <img
+          src="http://static1.squarespace.com/static/56454c01e4b0177ad4141742/56f3eeaa6e06f2df013dd6cd/56f3ef166e06f2df013de90c/1458827030375/Covers-Vol.-1-Cover.jpg?format=original"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Love the beat</h5>
+          <p class="card-text text-secondary">
+            Nikhil Kumar Singh, Nitish Kumar Singh<br />
+            12 April 2022
+          </p>
+          <ul
+            class="list-inline rating-list"
+            *ngFor="let star of stars"
+            style="display: inline-block"
+          >
+            <li
+              (click)="countStar(star)"
+              [ngClass]="{ selected: star <= selectedValue }"
+            >
+              <i class="fa fa-star"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-top: 20px">
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Top 10 Songs</span>
+    </div>
+  </nav>
+
+  <div class="row card" style="padding: 10px">
+    <div class="col-sm-12 col-md-4 col-lg-3">
+      <div class="card">
+        <img
+          src="http://static1.squarespace.com/static/56454c01e4b0177ad4141742/56f3eeaa6e06f2df013dd6cd/56f3ef166e06f2df013de90c/1458827030375/Covers-Vol.-1-Cover.jpg?format=original"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Love the beat</h5>
+          <p class="card-text text-secondary">
+            Nikhil Kumar Singh, Nitish Kumar Singh<br />
+            12 April 2022
+          </p>
+          <ul
+            class="list-inline rating-list"
+            *ngFor="let star of stars"
+            style="display: inline-block"
+          >
+            <li
+              (click)="countStar(star)"
+              [ngClass]="{ selected: star <= selectedValue }"
+            >
+              <i class="fa fa-star"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
